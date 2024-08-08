@@ -1,3 +1,9 @@
+-=(Cave_Senhor notes)=-
+
+Tested: Working Video 720p, 1080p & Sound
+
+sys/sys_top.sv reg lowlat = 1; //Senhor: Set to 1 (previous value 0) to fix the pixel edge color artifacts when MISTER_FB=1 is enabled in the .qsf
+
 # Cave 68000
 
 [![Test](https://github.com/MiSTer-devel/Arcade-Cave_MiSTer/actions/workflows/test.yml/badge.svg)](https://github.com/MiSTer-devel/Arcade-Cave_MiSTer/actions/workflows/test.yml)
