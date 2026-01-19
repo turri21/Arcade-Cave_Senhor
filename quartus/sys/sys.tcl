@@ -55,6 +55,10 @@ set_location_assignment PIN_AH12 -to SDRAM_nCAS
 set_location_assignment PIN_AG11 -to SDRAM_nCS
 set_location_assignment PIN_AG13 -to SDRAM_nRAS
 
+#set_instance_assignment -name VIRTUAL_PIN ON -to SDRAM_DQML
+#set_instance_assignment -name VIRTUAL_PIN ON -to SDRAM_DQMH
+#set_instance_assignment -name VIRTUAL_PIN ON -to SDRAM_CKE
+
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SDRAM_*
 set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to SDRAM_*
 set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to SDRAM_*
@@ -152,17 +156,26 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[1]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[2]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[3]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[4]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[5]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[6]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[7]
-set_location_assignment PIN_W15 -to LED[0]
-set_location_assignment PIN_AA24 -to LED[1]
-set_location_assignment PIN_V16 -to LED[2]
+#set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[5]
+#set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[6]
+#set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[7]
+
+#LEDs for MiSTer
+#set_location_assignment PIN_W15 -to LED[0]
+#set_location_assignment PIN_AA24 -to LED[1]
+#set_location_assignment PIN_V16 -to LED[2]
+#set_location_assignment PIN_V15 -to LED[3]
+#set_location_assignment PIN_AF26 -to LED[4]
+#set_location_assignment PIN_AE26 -to LED[5]
+#set_location_assignment PIN_Y16 -to LED[6]
+#set_location_assignment PIN_AA23 -to LED[7]
+
+#LEDs for Senhor
+set_location_assignment PIN_AF26 -to LED[0]
+set_location_assignment PIN_AE26 -to LED[1]
+set_location_assignment PIN_Y16 -to LED[2]
 set_location_assignment PIN_V15 -to LED[3]
-set_location_assignment PIN_AF26 -to LED[4]
-set_location_assignment PIN_AE26 -to LED[5]
-set_location_assignment PIN_Y16 -to LED[6]
-set_location_assignment PIN_AA23 -to LED[7]
+set_location_assignment PIN_V16 -to LED[4]
 
 #============================================================
 # SW
